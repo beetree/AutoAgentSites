@@ -218,6 +218,20 @@
         background: rgba(255, 255, 255, 0.55);
       }
 
+      .sms-hero {
+        margin-top: 28px;
+        padding: 32px 38px;
+        border-radius: 26px;
+        border: 1px solid rgba(15, 118, 110, 0.30);
+        background: linear-gradient(135deg, rgba(15, 118, 110, 0.10), rgba(255, 250, 241, 0.95));
+        display: grid;
+        grid-template-columns: 1.3fr auto;
+        gap: 24px;
+        align-items: center;
+      }
+
+      .sms-hero h2 { margin-bottom: 6px; }
+
       .footer {
         margin-top: 28px;
         padding-top: 20px;
@@ -226,9 +240,19 @@
         font-size: 15px;
       }
 
+      .footer-links {
+        margin-top: 12px;
+        font-size: 14px;
+      }
+
+      .footer-links a + a {
+        margin-left: 14px;
+      }
+
       @media (max-width: 920px) {
         .hero,
-        .grid {
+        .grid,
+        .sms-hero {
           grid-template-columns: 1fr;
         }
 
@@ -257,6 +281,7 @@
             <a class="btn btn-primary" href="mailto:info@leetgroup.net?subject=DFW%20Scrap%20Rates%20sample">
               Request a Free Sample
             </a>
+            <a class="btn btn-secondary" href="/sms-signup.html">Get SMS Updates</a>
             <a class="btn btn-secondary" href="#how-it-works">See How It Works</a>
           </div>
           <div class="chips">
@@ -326,6 +351,19 @@
         </ul>
       </section>
 
+      <section class="section sms-hero" id="sms">
+        <div>
+          <p class="eyebrow">SMS Updates &mdash; Opt-In</p>
+          <h2>Get DFW Copper Prices by Text</h2>
+          <p style="margin-top: 12px;">
+            Sign up for daily DFW copper price summaries delivered by SMS each weekday morning.
+            Approximately 5 messages per week. Reply <strong>STOP</strong> to DFW Scrap Rates
+            anytime to opt out.
+          </p>
+        </div>
+        <a class="btn btn-primary" href="/sms-signup.html">Sign Up for SMS</a>
+      </section>
+
       <section class="section panel">
         <h2>Current Scope</h2>
         <div class="highlight">
@@ -338,6 +376,11 @@
         <div class="footer">
           Questions or sample requests:
           <a href="mailto:info@leetgroup.net">info@leetgroup.net</a>
+          <div class="footer-links">
+            <a href="/sms-signup.html">SMS Sign-up</a>
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms</a>
+          </div>
         </div>
       </section>
     </main>
